@@ -5,25 +5,26 @@
 }
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.png);
+  --bg-url: url(./assets/bg-mobile-light.gif);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(./assets/MoonStars.svg);
+  --switch-bg-url: url(./assets/sun.svg);
 }
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.gif);
+  --bg-url: url(./assets/bg-mobile.png);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./assets/sun.svg);
+
+  --switch-bg-url: url(./assets/MoonStars.svg);
 }
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
+  height: 150vh;
 }
 body * {
   font-family: "SUSE", sans-serif;
@@ -41,8 +42,11 @@ body * {
   padding: 24px;
 }
 #profile img {
-  width: 10em;
-  border-radius: 30em;
+  width: 7em;
+  height: 7em;
+  border: 2px solid;
+  border-radius: 60px;
+  
 
 }
 #profile p {
@@ -151,11 +155,12 @@ footer {
 /* media queries */
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.png);
+    --bg-url: url(./assets/bg-desktop-light.gif);
+    
   }
 
   .light {
-    --bg-url: url(./assets/bg-desktop-light.gif);
+    --bg-url: url(./assets/bg-desktop.png);
   }
     li{
       background-color: rgba(173, 173, 173, 0.493);
